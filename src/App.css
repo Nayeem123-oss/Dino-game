@@ -1,0 +1,58 @@
+/* src/App.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0e0e0; /* Light gray background */
+    color: #333; /* Dark text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+  }
+  
+  /* Main App Container */
+  .App {
+    background-color: #ffffff; /* White background for the game area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding around the content */
+    width: 400px; /* Fixed width for the game area */
+    max-width: 90%; /* Responsive max width */
+  }
+  
+  /* Game Over Message */
+  .game-over {
+    font-size: 24px; /* Larger font size for emphasis */
+    color: #e91e63; /* Red color for game over */
+    margin-top: 20px; /* Space above the message */
+  }
+  
+  /* Score Display */
+  .score {
+    font-size: 20px; /* Font size for the score */
+    margin-top: 10px; /* Space above the score */
+  }
+  
+  /* Button Styles (if you add any buttons in the future) */
+  button {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
