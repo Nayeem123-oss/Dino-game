@@ -1,0 +1,51 @@
+/* src/components/DinoGame.css */
+
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Fixed height for the game area */
+    background-color: #f7f7f7; /* Light background for the game area */
+    border: 2px solid #4caf50; /* Green border to match the Dino */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for obstacles */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Score Display */
+  .score {
+    position: absolute;
+    top: 10px; /* Positioning at the top */
+    left: 10px; /* Positioning from the left */
+    font-size: 20px; /* Font size for the score */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold text for emphasis */
+  }
+  
+  /* Game Over Message */
+  .game-over {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Centering adjustment */
+    font-size: 24px; /* Larger font size for emphasis */
+    color: #e91e63; /* Red color for game over */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  /* Dino Animation */
+  .dino {
+    transition: bottom 0.5s; /* Smooth transition for jumping */
+  }
+  
+  /* Obstacle Styles */
+  .obstacle {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    width: 20px; /* Fixed width for obstacles */
+    background-color: #e91e63; /* Color for obstacles */
+    transition: left 0.1s linear; /* Smooth transition for movement */
+  }
